@@ -3,7 +3,7 @@ package gokzg4844
 import (
 	"encoding/json"
 
-	"github.com/crate-crypto/go-kzg-4844/internal/kzg"
+	"github.com/RiemaLabs/go-kzg-4844/internal/kzg"
 )
 
 // Context holds the necessary configuration needed to create and verify proofs.

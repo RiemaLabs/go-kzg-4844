@@ -8,7 +8,7 @@ polynomials in lagrange form (4096 evaluations at 4096'th roots of unity).
 ## Installation 
 
 ```
-$ go get github.com/crate-crypto/go-kzg-4844
+$ go get github.com/RiemaLabs/go-kzg-4844
 ```
 
 ## Example

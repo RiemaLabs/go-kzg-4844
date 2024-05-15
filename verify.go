@@ -1,8 +1,8 @@
 package gokzg4844
 
 import (
+	"github.com/RiemaLabs/go-kzg-4844/internal/kzg"
 	bls12381 "github.com/consensys/gnark-crypto/ecc/bls12-381"
-	"github.com/crate-crypto/go-kzg-4844/internal/kzg"
 	"golang.org/x/sync/errgroup"
 )
 

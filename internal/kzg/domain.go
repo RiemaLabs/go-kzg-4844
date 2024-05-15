@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"math/bits"
 
+	"github.com/RiemaLabs/go-kzg-4844/internal/utils"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	"github.com/crate-crypto/go-kzg-4844/internal/utils"
 )
 
 // Domain is a struct defining the set of points that polynomials are evaluated over.

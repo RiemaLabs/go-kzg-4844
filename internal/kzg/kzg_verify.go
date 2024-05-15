@@ -3,10 +3,10 @@ package kzg
 import (
 	"math/big"
 
+	"github.com/RiemaLabs/go-kzg-4844/internal/utils"
 	"github.com/consensys/gnark-crypto/ecc"
 	bls12381 "github.com/consensys/gnark-crypto/ecc/bls12-381"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	"github.com/crate-crypto/go-kzg-4844/internal/utils"
 )
 
 // OpeningProof is a struct holding a (cryptographic) proof to the claim that a polynomial f(X) (represented by a

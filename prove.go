@@ -1,7 +1,7 @@
 package gokzg4844
 
 import (
-	"github.com/crate-crypto/go-kzg-4844/internal/kzg"
+	"github.com/RiemaLabs/go-kzg-4844/internal/kzg"
 )
 
 // BlobToKZGCommitment implements [blob_to_kzg_commitment].

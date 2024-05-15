@@ -8,9 +8,9 @@ import (
 	"log"
 	"testing"
 
+	gokzg4844 "github.com/RiemaLabs/go-kzg-4844"
+	"github.com/RiemaLabs/go-kzg-4844/internal/kzg"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	gokzg4844 "github.com/crate-crypto/go-kzg-4844"
-	"github.com/crate-crypto/go-kzg-4844/internal/kzg"
 	"github.com/stretchr/testify/require"
 )
 

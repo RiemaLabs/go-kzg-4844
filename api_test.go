@@ -4,9 +4,9 @@ import (
 	"math/big"
 	"testing"
 
+	gokzg4844 "github.com/RiemaLabs/go-kzg-4844"
 	bls12381 "github.com/consensys/gnark-crypto/ecc/bls12-381"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	gokzg4844 "github.com/crate-crypto/go-kzg-4844"
 	"github.com/stretchr/testify/require"
 )
 

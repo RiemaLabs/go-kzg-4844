@@ -5,9 +5,9 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/RiemaLabs/go-kzg-4844/internal/utils"
 	bls12381 "github.com/consensys/gnark-crypto/ecc/bls12-381"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	"github.com/crate-crypto/go-kzg-4844/internal/utils"
 )
 
 func TestMultiExpSmoke(t *testing.T) {

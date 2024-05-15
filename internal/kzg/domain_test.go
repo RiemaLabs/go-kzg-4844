@@ -8,8 +8,8 @@ import (
 	"math/bits"
 	"testing"
 
+	"github.com/RiemaLabs/go-kzg-4844/internal/utils"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	"github.com/crate-crypto/go-kzg-4844/internal/utils"
 )
 
 func TestRootsSmoke(t *testing.T) {

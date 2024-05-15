@@ -1,4 +1,4 @@
-module github.com/crate-crypto/go-kzg-4844
+module github.com/RiemaLabs/go-kzg-4844
 
 go 1.20
 
@@ -21,5 +21,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	rsc.io/tmplfunc v0.0.3 // indirect
 )
-
-replace github.com/crate-crypto/go-kzg-4844 => ./
