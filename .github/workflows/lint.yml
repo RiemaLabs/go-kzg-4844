@@ -1,39 +1,27 @@
-name: Lint
-
+name: LINT
 on:
   push:
     branches:
-      - master
+      - main
+      - fix/cicd
   pull_request:
-    branches:
-      - master
+
+permissions:
+  contents: read
+  pull-requests: read
+  checks: write
+  # Optional: allow read access to pull request. Use with  option.
 
 jobs:
-  lint:
-    name: Lint
+  golangci:
+    name: lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up Go
-        uses: actions/setup-go@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
         with:
-          go-version: ^1.20
-          id: go
-
-      - name: Check go mod is tidy
-        run: |
-          go mod tidy
-          git diff-index HEAD
-          git diff-index --quiet HEAD
-
-      - name: Install staticcheck
-        run: go install honnef.co/go/tools/cmd/staticcheck@v0.4.2
-      - name: Run staticcheck
-        run: staticcheck ./...
-
-      - name: Install golangci-lint
-        run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.51.2
-      - name: Run golangci-lint
-        run: golangci-lint run
+          go-version: stable
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: v1.58
