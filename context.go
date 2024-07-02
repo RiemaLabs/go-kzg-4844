@@ -5,7 +5,7 @@ import (
 )
 
 func (c *Context) DomainByIndex(index int) (*fr.Element, error) {
-	if index > int(c.domain.Cardinality) {
+	if index >= int(c.domain.Cardinality) || index < 0 {
 		return nil, ErrIndexOutOfRange
 	}
 
